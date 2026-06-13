@@ -35,7 +35,7 @@ jobs:
             - name: Display User Inputs
               run: |
                 echo "Environment: ${{ inputs.environment }}"
-                echo "Perform Smoke Test: ${{ inputs.perform_smoke_test }}
+                echo "Perform Smoke Test: ${{ inputs.perform_smoke_test }}"
 
             - name: Build Docker Image
               uses: docker/build-push-action@v7
