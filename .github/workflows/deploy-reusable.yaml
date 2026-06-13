@@ -17,7 +17,7 @@ on:
         
 jobs:
     deploy-application-job:
-        runs-on: compostie
+        runs-on: ubuntu-latest
 
         steps:
             - name: Display Deployment Parameters
