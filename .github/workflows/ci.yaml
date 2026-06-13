@@ -22,7 +22,7 @@ on:
 env:
     APPLICATION_NAME: manjot-flask-app
     DOCKER_USERNAME: smanjot444
-    IMAGE_TAG: V1.0.1
+    IMAGE_TAG: V1.0.${{ github.run_number }}
 
 jobs:
     flask-ci-job:
