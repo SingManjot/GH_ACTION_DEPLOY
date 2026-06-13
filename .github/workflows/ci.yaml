@@ -70,9 +70,9 @@ jobs:
             - name: Run container
               run: |
                 docker run -d \
-                -p 5000:5000
-                --name flask-container \
-                ${{ env.DOCKER_USERNAME }}/${{ env.APPLICATION_NAME }}:${{ env.IMAGE_TAG }}
+                    -p 5000:5000 \
+                    --name flask-container \
+                    ${{ env.DOCKER_USERNAME }}/${{ env.APPLICATION_NAME }}:${{ env.IMAGE_TAG }}
 
             - name: Smoke test
               if: ${{ inputs.environment }}
